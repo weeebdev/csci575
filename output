@@ -1,0 +1,180 @@
+ltl prop1: [] ((! ((browser1.receivedPackets!=browser1.sentPackets))) || ((browser1.receivedPackets==browser1.sentPackets)))
+[runBrowser]: Browser 1: User typed a query: bad
+[handleUserInput]: User input: bad
+[handleUserInput]: Bad query
+[runBrowser]: Browser 2: User typed a query: bad
+[handleUserInput]: User input: yahoo
+[runBrowser]: Browser 1: User typed a query: yahoo
+[handleUserInput]: User input: yahoo
+[sendUrlRequest]: Browser 1: Checking if yahooCom is already cached
+[sendUrlRequest]: Browser 1: yahooCom is not cached
+[sendUrlRequest]: Browser 1: Sending request to yahooCom
+[sendUrlRequest]: Browser 2: Checking if yahooCom is already cached
+[sendUrlRequest]: Browser 2: yahooCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to yahooCom
+[runBrowser]: Browser 1: User typed a query: bad
+[handleUserInput]: User input: bad
+[handleUserInput]: Bad query
+[runBrowser]: Browser 1: User typed a query: custom
+[handleUserInput]: User input: custom
+[runServer]: Sent response from 13 to browser 1
+[runBrowser]: Browser 2: User typed a query: custom
+[handleUserInput]: User input: custom
+[sendUrlRequest]: Browser 1: Checking if customCom is already cached
+[sendUrlRequest]: Browser 1: customCom is not cached
+[sendUrlRequest]: Browser 1: Sending request to customCom
+[sendUrlRequest]: Browser 2: Checking if customCom is already cached
+[sendUrlRequest]: Browser 2: customCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to customCom
+[runServer]: Received request from 13 that needs to be redirected to 14
+[runServer]: Sent response from 13 to browser 2
+[receiveUrlResponse]: Browser 1: Received response 200 from 13
+[runServer]: Received request from 11 that needs to be redirected to 12
+[receiveUrlResponse]: Browser 1: received html packet from 13 successfully
+[sendUrlRequest]: Browser 1: Checking if yahooJSCom is already cached
+[receiveUrlResponse]: Browser 2: Received response 301 from 14
+[sendUrlRequest]: Browser 1: yahooJSCom is not cached
+[receiveUrlResponse]: Browser 2: 14 is redirecting
+[sendUrlRequest]: Browser 1: Sending request to yahooJSCom
+[runServer]: Sent response from 11 to browser 1
+[sendUrlRequest]: Browser 2: Checking if googleCom is already cached
+[sendUrlRequest]: Browser 2: googleCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to googleCom
+[sendUrlRequest]: Browser 1: Checking if yahooCSSCom is already cached
+[sendUrlRequest]: Browser 1: yahooCSSCom is not cached
+[runServer]: Received request from 11 that needs to be redirected to 11
+[sendUrlRequest]: Browser 1: Sending request to yahooCSSCom
+[runBrowser]: Browser 2: User typed a query: bad
+[runServer]: Sent response from 11 to browser 2
+[handleUserInput]: User input: bad
+[handleUserInput]: Bad query
+[receiveUrlResponse]: Browser 2: Received response 301 from 11
+[receiveUrlResponse]: Browser 1: Received response 301 from 12
+[receiveUrlResponse]: Browser 2: 11 is redirecting
+[runServer]: Received request from 14 that needs to be redirected to 14
+[receiveUrlResponse]: Browser 1: 12 is redirecting
+[sendUrlRequest]: Browser 2: Checking if bingCom is already cached
+[sendUrlRequest]: Browser 2: bingCom is cached
+[sendUrlRequest]: Browser 1: Checking if bingCom is already cached
+[sendUrlRequest]: Browser 2: Navigation in bingCom ends
+[sendUrlRequest]: Browser 1: bingCom is cached
+[sendUrlRequest]: Browser 1: Navigation in bingCom ends
+[runBrowser]: Browser 2: User typed a query: google
+[handleUserInput]: User input: google
+[runServer]: Sent response from 14 to browser 1
+[runBrowser]: Browser 1: User typed a query: bad
+[handleUserInput]: User input: bad
+[handleUserInput]: Bad query
+[receiveUrlResponse]: Browser 1: Received response 301 from 14
+[runServer]: Received request from 14 that needs to be redirected to 11
+[receiveUrlResponse]: Browser 1: 14 is redirecting
+[runServer]: Sent response from 14 to browser 2
+[sendUrlRequest]: Browser 1: Checking if googleCom is already cached
+[sendUrlRequest]: Browser 1: googleCom is cached
+[sendUrlRequest]: Browser 1: Navigation in googleCom ends
+[runBrowser]: Browser 1: User typed a query: custom
+[handleUserInput]: User input: custom
+[sendUrlRequest]: Browser 2: Checking if customCom is already cached
+[sendUrlRequest]: Browser 2: customCom is cached
+[sendUrlRequest]: Browser 2: Navigation in customCom ends
+[sendUrlRequest]: Browser 1: Checking if customCom is already cached
+[sendUrlRequest]: Browser 1: customCom is cached
+[runServer]: Received request from 0 that needs to be redirected to 11
+[sendUrlRequest]: Browser 1: Navigation in customCom ends
+[runServer]: Sent response from 0 to browser 1
+[receiveUrlResponse]: Browser 2: Received response 301 from 11
+[receiveUrlResponse]: Browser 2: 11 is redirecting
+[sendUrlRequest]: Browser 2: Checking if customCom is already cached
+[sendUrlRequest]: Browser 2: customCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to customCom
+[runBrowser]: Browser 1: User typed a query: custom
+[handleUserInput]: User input: custom
+[sendUrlRequest]: Browser 1: Checking if customCom is already cached
+[sendUrlRequest]: Browser 1: customCom is cached
+[sendUrlRequest]: Browser 1: Navigation in customCom ends
+[receiveUrlResponse]: Browser 1: Received response 301 from 11
+[receiveUrlResponse]: Browser 1: 11 is redirecting
+[sendUrlRequest]: Browser 1: Checking if customCom is already cached
+[runBrowser]: Browser 2: User typed a query: google
+[sendUrlRequest]: Browser 1: customCom is cached
+[sendUrlRequest]: Browser 1: Navigation in customCom ends
+[handleUserInput]: User input: google
+[runBrowser]: Browser 1: User typed a query: custom
+[sendUrlRequest]: Browser 2: Checking if customCom is already cached
+[sendUrlRequest]: Browser 2: customCom is cached
+[runServer]: Received request from 11 that needs to be redirected to 13
+[sendUrlRequest]: Browser 2: Navigation in customCom ends
+[handleUserInput]: User input: custom
+[runServer]: Sent response from 11 to browser 2
+[sendUrlRequest]: Browser 1: Checking if customCom is already cached
+[sendUrlRequest]: Browser 1: customCom is cached
+[runBrowser]: Browser 2: User typed a query: custom
+[handleUserInput]: User input: custom
+[sendUrlRequest]: Browser 1: Navigation in 0 ends
+[sendUrlRequest]: Browser 2: Checking if customCom is already cached
+[sendUrlRequest]: Browser 2: customCom is cached
+[sendUrlRequest]: Browser 2: Navigation in customCom ends
+[runBrowser]: Browser 1: User typed a query: yahoo
+[handleUserInput]: User input: yahoo
+[receiveUrlResponse]: Browser 2: Received response 301 from 13
+[sendUrlRequest]: Browser 1: Checking if yahooCom is already cached
+[receiveUrlResponse]: Browser 2: 13 is redirecting
+[sendUrlRequest]: Browser 1: yahooCom is not cached
+[sendUrlRequest]: Browser 1: Sending request to yahooCom
+[sendUrlRequest]: Browser 2: Checking if yahooCom is already cached
+[sendUrlRequest]: Browser 2: yahooCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to yahooCom
+[runServer]: Received request from 13 that needs to be redirected to 12
+[runBrowser]: Browser 2: User typed a query: bing
+[handleUserInput]: User input: bing
+[receiveUrlResponse]: Browser 1: Received response 301 from 12
+[runServer]: Sent response from 13 to browser 1
+[sendUrlRequest]: Browser 2: Checking if bingCom is already cached
+[receiveUrlResponse]: Browser 1: 12 is redirecting
+[sendUrlRequest]: Browser 1: Checking if bingCom is already cached
+[sendUrlRequest]: Browser 1: bingCom is cached
+[sendUrlRequest]: Browser 2: bingCom is cached
+[sendUrlRequest]: Browser 1: Navigation in bingCom ends
+[sendUrlRequest]: Browser 2: Navigation in bingCom ends
+[runServer]: Received request from 13 that needs to be redirected to 13
+[runBrowser]: Browser 1 is shutting down
+[runServer]: Sent response from 13 to browser 2
+[runBrowser]: Sending signal to shutdown server
+[receiveUrlResponse]: Browser 2: Received response 301 from 13
+[runServer]: Browser 1 is shutting down
+[receiveUrlResponse]: Browser 2: 13 is redirecting
+[sendUrlRequest]: Browser 2: Checking if yahooCom is already cached
+[sendUrlRequest]: Browser 2: yahooCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to yahooCom
+[runBrowser]: Browser 2: User typed a query: google
+[handleUserInput]: User input: google
+[sendUrlRequest]: Browser 2: Checking if googleCom is already cached
+[sendUrlRequest]: Browser 2: googleCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to googleCom
+[runServer]: Unknown error on the server
+[receiveUrlResponse]: Browser 2: Received response 404 from 13
+[receiveUrlResponse]: Browser 2: received bad response from 13
+[runServer]: Sent response from 13 to browser 2
+[receiveUrlResponse]: Browser 2: navigation in 13 ends
+[runBrowser]: Browser 2: User typed a query: google
+[handleUserInput]: User input: google
+[sendUrlRequest]: Browser 2: Checking if googleCom is already cached
+[sendUrlRequest]: Browser 2: googleCom is cached
+[sendUrlRequest]: Browser 2: Navigation in googleCom ends
+[runServer]: Received request from 14 that needs to be redirected to 14
+[runServer]: Sent response from 14 to browser 2
+[receiveUrlResponse]: Browser 2: Received response 301 from 14
+[receiveUrlResponse]: Browser 2: 14 is redirecting
+[sendUrlRequest]: Browser 2: Checking if googleCom is already cached
+[sendUrlRequest]: Browser 2: googleCom is not cached
+[sendUrlRequest]: Browser 2: Sending request to googleCom
+[runServer]: Unknown error on the server
+[runServer]: Sent response from 14 to browser 2
+[receiveUrlResponse]: Browser 2: Received response 404 from 14
+[receiveUrlResponse]: Browser 2: received bad response from 14
+[receiveUrlResponse]: Browser 2: navigation in 14 ends
+[runBrowser]: Browser 2 is shutting down
+[runBrowser]: Sending signal to shutdown server
+[runServer]: Browser 2 is shutting down
+[runServer]: Server shutting down
+7 processes created
